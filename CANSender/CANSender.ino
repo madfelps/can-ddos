@@ -18,7 +18,7 @@ void setup() {
 
 void loop() {
 
-  CAN.beginPacket(0x42); // 0x42 em decimal é 66
+  CAN.beginPacket(0x43); // 0x42 em decimal é 67
   CAN.write(0);
   CAN.endPacket();
 

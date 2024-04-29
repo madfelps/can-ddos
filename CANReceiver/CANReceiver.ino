@@ -12,6 +12,9 @@ int totalCounter;
 
 void count(long id){
 
+  Serial.println("ID: ");
+  Serial.println(CAN.packetId());
+
   if (CAN.packetId() == senderid) {
     senderCounter++;
   }
@@ -82,6 +85,6 @@ void loop() {
   Serial.println(percent(attackerCounter, totalCounter));
   
   
-  delay(3000);
+  delay(1000);
 }
 

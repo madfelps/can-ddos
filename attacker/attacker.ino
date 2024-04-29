@@ -20,7 +20,7 @@ void loop() {
   Serial.print("Sending packet ... ");
 
   // Send message with higher priority
-  CAN.beginPacket(0x00);
+  CAN.beginPacket(0x42);
   CAN.write(0);
   CAN.endPacket();
 
